@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+<BODY>
+
+<table border="1" align="center" width="400">
+<tr>
+<td align="center" colspan="2">Delicious Restaurant</td>
+</tr align=center>
+<td align="center">Nuggets</td><td align="center">Price of Nuggets: 8.5</td></tr>
+<tr>
+<td align="center">Burger</td><td align="center">Price of Burger: 6</td></tr>
+<tr>
+<td align="center">Coke</td><td align="center">Price of Coke: 2</td></tr>
+</table>
+<script>
+const money$ = ["Price of Nuggets: 8.5", "Price of Burger: 6", "Price of Burger:6"];
+const food = ["Nuggets","Burger","Coke"];
+let i= 0;
+let len = money$.length;
+let text = "";
+
+let j = 0;
+let len1 = food.length;
+let text1 = "";
+
+for (;i < len;) {
+ text += money$[i] +"<br>";
+ i++;
+}
+for (;j < len1;) {
+ text1 += food[j] +"<br>";
+ j++;
+}
+document.getElementById("money$").innerHTML = text;
+document.getElementById("food").innerHTML = text1;
+</script>
+</BODY>
+</HTML>
